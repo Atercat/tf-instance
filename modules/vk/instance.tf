@@ -10,7 +10,7 @@ resource "vkcs_compute_instance" "vm" {
   image_id        = var.image_id
   flavor_name     = var.flavor_name
   key_pair        = var.key_pair
-  security_groups = ["all"]
+  security_groups = ["default","all"]
   config_drive = true
 
   block_device {
