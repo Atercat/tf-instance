@@ -1,3 +1,7 @@
+variable "name" {
+    type = string
+    default = "instance"
+}
 variable "flavor_name" {
     type = string
     default = "Standard-2-2"
@@ -12,10 +16,6 @@ variable "image_id" {
     default = "d853edd0-27b3-4385-a380-248ac8e40956" #Ubuntu-20.04.1-202008
     description = "openstack image list"
 }
-#variable "cnt" {
-#    type = number
-#    default = 1
-#}
 variable "key_pair" {
     type = string
     default = "vv_kotov_CPUC_-rsa"
