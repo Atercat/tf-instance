@@ -9,7 +9,7 @@ variable "storage_size" {
 }
 variable "image_id" {
     type = string
-    default = "d853edd0-27b3-4385-a380-248ac8e40956" #Ubuntu-18.04-201910
+    default = "d853edd0-27b3-4385-a380-248ac8e40956" #Ubuntu-20.04.1-202008
     description = "openstack image list"
 }
 #variable "cnt" {
