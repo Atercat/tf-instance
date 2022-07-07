@@ -20,3 +20,11 @@ variable "key_pair" {
     type = string
     default = "vv_kotov_CPUC_-rsa"
 }
+variable "vm_count" {
+    type = number
+    default = 1
+}
+variable "suffix" {
+    type = string
+    default = var.vm_count > 1 ? "-${count.index}" : ""
+}
